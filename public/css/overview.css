@@ -1,0 +1,99 @@
+
+        .navigation{
+            display: flex;
+            border: 1px solid;
+        }
+        .login-forms{
+            text-align: center;
+            margin-left: 48%;
+            height: 50px;
+            padding-top: 10px;
+        }
+        .username{
+            height: 40px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .password{
+            height: 40px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .login-Btn{
+            height: 40px;
+            width: 150px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .TO-DO-center{
+            text-align: center;
+            line-height: 10px;
+            font-size: x-large;
+        }
+        .outer-container{
+            display: flex;
+            border: 1px solid;
+            height: 700px;
+        }
+        .left-container{
+            border: 1px solid;
+            width: 15%;
+        }
+        .legend{
+            display: flex;
+        }
+        .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        z-index: 5;
+        -webkit-animation: fadeEffect 1;
+        animation: fadeEffect 1s;
+        }
+        .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        background-color: white;
+        padding: 6rem;
+        border-radius: 5px;
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        -webkit-animation: fadeEffect 1;
+        animation: fadeEffect 1s;
+        }
+        .close-modal {
+        top: 1.2rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: #333;
+        cursor: pointer;
+        border: none;
+        background: none;
+        position: absolute;
+        -webkit-animation: fadeEffect 1;
+        animation: fadeEffect 1s;
+        }
+        .hide{
+            display: none;
+        }
+
+
+
+        @-webkit-keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1.5;}
+          }
+          
+          @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1.5;}
+          }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="./css/overview.css">
+    <script type="module" defer src="./js/control.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-user">
+            <h4>{%User%}</h4>
+        </div>
+        <div class="login-forms">
+            <input type="text" placeholder="Username" class="username">
+            <input type="password" placeholder="Password" class="password">
+            <button class="login-Btn">Login</button>
+        </div>
+    </div>
+    <div class="TO-DO-center">
+        <h1>TO-DO</h1>
+        <h1>LIST</h1>
+    </div>
+    <div class="outer-container">
+        <div class="left-container">
+            <button class="summary">Summary</button><br>
+            <button class="pending">Pending</button><br>
+            <button class="accomplished">Accomplished</button><br>
+        </div>
+        <div class="right-container">
+            <div class="upper-right-container">
+                <div class="legend">
+                    <h2>Legend:</h2>
+                    <h2>Urget!💥</h2>
+                    <h2>Important🚩</h2>
+                    <h2>Not Urgent📆</h2>
+                </div>
+                    <button class="create-list">➕ Create To-do</button>
+            </div>
+            <div class="modal hide">
+                <button class="close-modal">&times;</button>
+                <label for="status"><b>Status:</b></label>
+                <select id="status">
+                    <option value="urgent">Urget!💥</option>
+                    <option value="important">Important🚩</option>
+                    <option value="not-urgent">Not Urgent📆</option>
+                </select><br>
+                <b>Subject:</b>
+                <input type="text"><br>
+                <b>Date Needed</b>
+                <input type="date"><br>
+                <b>Description</b>
+                <input type="text"><br>
+                <button class="submit-Btn">Submit</button>
+
+
+                
+
+            </div>
+            <div class="lower-right-container">
+
+            </div>
+            <div class="overlay hide"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
